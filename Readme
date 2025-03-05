@@ -1,0 +1,11 @@
+Install
+pip install streamlit pypdf2 langchain python-dotenv faiss-cpu huggingface_hub
+
+Exe
+streamlit run app.py
+
+
+
+- Öncelikli olarak Pdf import ettik ve icerisindeki her sayfaya dair yaziyi PdfReader ile aldik.
+- CharacterTextSplitter ile aldigiiz yaziyi parcalara ayirdik. Anlambütünlügü olmasin diye aralari 200 parcalik ortak noktalar koyduk.
+
